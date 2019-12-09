@@ -9,6 +9,4 @@
 # *$git clone https://github.com/dzulyusri/daftar    Enter*
 # *$cd daftar Enter*
 # *$php daftarx.php Enter*
-
-
 # SELESAI
