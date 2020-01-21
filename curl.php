@@ -6,11 +6,11 @@ $header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
 $header[] = "Content-Type: application/json; charset=UTF-8";
-$header[] = "X-AppVersion: 3.37.2";
+$header[] = "X-AppVersion: 3.38.2";
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: 38.5208742,-98.7923912";
+$header[] = "X-Location: -7.090911,107.668886";
 $header[] = "X-Location-Accuracy: 3.0";
 if ($pin):
 $header[] = "pin: $pin";
@@ -149,7 +149,7 @@ function verif($otp, $token)
     }
 function claim($token)
     {
-    $data = '{"promo_code":"GOFOODSENANG12"}';    
+    $data = '{"promo_code":"PESANGOFOOD"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -163,7 +163,7 @@ function claim($token)
     }
     function claim1($token)
     {
-    $data = '{"promo_code":"GOFOODSENANG15"}';    
+    $data = '{"promo_code":"GOFOODYUK"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -177,7 +177,7 @@ function claim($token)
     }
     function claim2($token)
     {
-    $data = '{"promo_code":"GOFOODSENANG19"}';    
+    $data = '{"promo_code":"PAKEGOFOOD"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -217,9 +217,9 @@ function claim($token)
         return false;
         }
     }
-     function wadaw($token)
+     function hemat($token)
     {
-    $data = '{"promo_code":"JAJANPAKEGOPAY"}';    
+    $data = '{"promo_code":"GOFOODSENANG20"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
